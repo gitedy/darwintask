@@ -1,0 +1,17 @@
+<div ng-controller="pg3Ctrl">
+
+    <button class="btn btn-default btn-lg" ng-if="loading"><i class="fa fa-spinner fa-spin"></i> Loading Images</button>
+    <div class="row" >
+
+
+        <div class="col-md-3"  ng-repeat="res in result track by $index">
+
+            <div class="panel panel-default">
+                <div class="panel-body"><img ng-src={{res}}  height="250px" width="280px" /></div>
+            </div>
+
+        </div>
+
+
+
+</div>

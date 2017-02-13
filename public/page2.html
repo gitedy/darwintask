@@ -1,0 +1,16 @@
+<div ng-controller="pg2Ctrl">
+
+    <div class="row" style="position: relative;top: 150px">
+        <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+        <button class="btn btn-default btn-lg" ng-if="loading"><i class="fa fa-spinner fa-spin"></i> Fetching List</button>
+    <div class="list-group" ng-hide="loading">
+        <button class="list-group-item list-group-item-danger">Keyword List</button>
+        <a  ng-repeat="res in result" class="list-group-item" href="#/3?name={{res.name}}">{{res.name}}</a>
+    </div>
+</div>
+
+        </div>
+
+    </div>
